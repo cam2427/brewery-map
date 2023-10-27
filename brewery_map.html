@@ -1,0 +1,1527 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5246f282eacd2e3514bfbb9a18a40e18 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5246f282eacd2e3514bfbb9a18a40e18" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5246f282eacd2e3514bfbb9a18a40e18 = L.map(
+                "map_5246f282eacd2e3514bfbb9a18a40e18",
+                {
+                    center: [40.70887567053217, -73.97721636642702],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_89bfdc9ebad70b7a13014053e5d5b08c = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_5246f282eacd2e3514bfbb9a18a40e18);
+        
+    
+            var marker_973c241b8ec9c4b24c10ef43e3e49f79 = L.marker(
+                [40.69165, -73.98603],
+                {}
+            ).addTo(map_5246f282eacd2e3514bfbb9a18a40e18);
+        
+    
+            var icon_15f0701e8c5e9f705a84c866dbc243e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_973c241b8ec9c4b24c10ef43e3e49f79.setIcon(icon_15f0701e8c5e9f705a84c866dbc243e9);
+        
+    
+        var popup_06067293f2383b188c2805b187f4922c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_13360a961fd7a04870205d08b2628fe2 = $(`<div id="html_13360a961fd7a04870205d08b2628fe2" style="width: 100.0%; height: 100.0%;">Circa Brewing - Rating: 4.0</div>`)[0];
+                popup_06067293f2383b188c2805b187f4922c.setContent(html_13360a961fd7a04870205d08b2628fe2);
+            
+        
+
+        marker_973c241b8ec9c4b24c10ef43e3e49f79.bindPopup(popup_06067293f2383b188c2805b187f4922c)
+        ;
+
+        
+    
+    
+            var marker_f4f25b5378bbda93e4ef56afd39be372 = L.marker(
+                [40.72587, -73.98944],
+                {}
+            ).addTo(map_5246f282eacd2e3514bfbb9a18a40e18);
+        
+    
+            var icon_61ed7ae178dba909c0636ca77153b9fa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f4f25b5378bbda93e4ef56afd39be372.setIcon(icon_61ed7ae178dba909c0636ca77153b9fa);
+        
+    
+        var popup_bb3543fdbb215715852290944bfb1350 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a6a45f979486dd7f9d5ea02e6c3c4318 = $(`<div id="html_a6a45f979486dd7f9d5ea02e6c3c4318" style="width: 100.0%; height: 100.0%;">Bronx Brewery East Village & Bastard Burgers - Rating: 4.5</div>`)[0];
+                popup_bb3543fdbb215715852290944bfb1350.setContent(html_a6a45f979486dd7f9d5ea02e6c3c4318);
+            
+        
+
+        marker_f4f25b5378bbda93e4ef56afd39be372.bindPopup(popup_bb3543fdbb215715852290944bfb1350)
+        ;
+
+        
+    
+    
+            var marker_aa84dcc8dd33b4d3b962d6c690a5d1b2 = L.marker(
+                [40.72621, -74.00431],
+                {}
+            ).addTo(map_5246f282eacd2e3514bfbb9a18a40e18);
+        
+    
+            var icon_d70c9ab4b9ae353f2cda39c31f8ce5dd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_aa84dcc8dd33b4d3b962d6c690a5d1b2.setIcon(icon_d70c9ab4b9ae353f2cda39c31f8ce5dd);
+        
+    
+        var popup_b6199c6ccb70fc063de5e06fb748fe0a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c4fda3bd13f5de31f342b9977bd67a06 = $(`<div id="html_c4fda3bd13f5de31f342b9977bd67a06" style="width: 100.0%; height: 100.0%;">Torch & Crown Brewing Company - Rating: 4.0</div>`)[0];
+                popup_b6199c6ccb70fc063de5e06fb748fe0a.setContent(html_c4fda3bd13f5de31f342b9977bd67a06);
+            
+        
+
+        marker_aa84dcc8dd33b4d3b962d6c690a5d1b2.bindPopup(popup_b6199c6ccb70fc063de5e06fb748fe0a)
+        ;
+
+        
+    
+    
+            var marker_a8ec063a6db62a1883514fd0821dd2b1 = L.marker(
+                [40.73025, -73.95781],
+                {}
+            ).addTo(map_5246f282eacd2e3514bfbb9a18a40e18);
+        
+    
+            var icon_6de410772b375df2076bd4e732163065 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a8ec063a6db62a1883514fd0821dd2b1.setIcon(icon_6de410772b375df2076bd4e732163065);
+        
+    
+        var popup_50642a921259b2bf4e8d993fa2b29ac3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_912e5f3dc35be1675c7f5ba91b083879 = $(`<div id="html_912e5f3dc35be1675c7f5ba91b083879" style="width: 100.0%; height: 100.0%;">Threes Brewing Greenpoint - Rating: 4.0</div>`)[0];
+                popup_50642a921259b2bf4e8d993fa2b29ac3.setContent(html_912e5f3dc35be1675c7f5ba91b083879);
+            
+        
+
+        marker_a8ec063a6db62a1883514fd0821dd2b1.bindPopup(popup_50642a921259b2bf4e8d993fa2b29ac3)
+        ;
+
+        
+    
+    
+            var marker_290a8749e963170194954c0be41d2084 = L.marker(
+                [40.724054, -73.950341],
+                {}
+            ).addTo(map_5246f282eacd2e3514bfbb9a18a40e18);
+        
+    
+            var icon_ca7bfcbd82fe756db88ad75dc0fa3412 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_290a8749e963170194954c0be41d2084.setIcon(icon_ca7bfcbd82fe756db88ad75dc0fa3412);
+        
+    
+        var popup_ee21a2059b02e535c053d82b8f247f1e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b8aa37636153fe42ca621de1fbf7f218 = $(`<div id="html_b8aa37636153fe42ca621de1fbf7f218" style="width: 100.0%; height: 100.0%;">Keg & Lantern Brewing Company - Rating: 4.0</div>`)[0];
+                popup_ee21a2059b02e535c053d82b8f247f1e.setContent(html_b8aa37636153fe42ca621de1fbf7f218);
+            
+        
+
+        marker_290a8749e963170194954c0be41d2084.bindPopup(popup_ee21a2059b02e535c053d82b8f247f1e)
+        ;
+
+        
+    
+    
+            var marker_e26ad3066682cda1b2b7915f780662b4 = L.marker(
+                [40.700536, -73.987459],
+                {}
+            ).addTo(map_5246f282eacd2e3514bfbb9a18a40e18);
+        
+    
+            var icon_75301654fcf9a7de54e3b12f0ff67801 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e26ad3066682cda1b2b7915f780662b4.setIcon(icon_75301654fcf9a7de54e3b12f0ff67801);
+        
+    
+        var popup_39884c3d1f7bb5ce61a53824521ef797 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d6c4144242d80ff6060edd317c6c1e67 = $(`<div id="html_d6c4144242d80ff6060edd317c6c1e67" style="width: 100.0%; height: 100.0%;">Randolph Beer - Rating: 3.5</div>`)[0];
+                popup_39884c3d1f7bb5ce61a53824521ef797.setContent(html_d6c4144242d80ff6060edd317c6c1e67);
+            
+        
+
+        marker_e26ad3066682cda1b2b7915f780662b4.bindPopup(popup_39884c3d1f7bb5ce61a53824521ef797)
+        ;
+
+        
+    
+    
+            var marker_52e301b2d33fd4842ff31d699915917b = L.marker(
+                [40.71873729578213, -73.94819947258614],
+                {}
+            ).addTo(map_5246f282eacd2e3514bfbb9a18a40e18);
+        
+    
+            var icon_28acf31c23e2ff84d0ce3ce7648134c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_52e301b2d33fd4842ff31d699915917b.setIcon(icon_28acf31c23e2ff84d0ce3ce7648134c4);
+        
+    
+        var popup_a7a1544dd5ef1694b24d3ddc25fcccec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_83110ed53d5b23e978e58ed1cc808adb = $(`<div id="html_83110ed53d5b23e978e58ed1cc808adb" style="width: 100.0%; height: 100.0%;">TALEA Beer - Rating: 4.5</div>`)[0];
+                popup_a7a1544dd5ef1694b24d3ddc25fcccec.setContent(html_83110ed53d5b23e978e58ed1cc808adb);
+            
+        
+
+        marker_52e301b2d33fd4842ff31d699915917b.bindPopup(popup_a7a1544dd5ef1694b24d3ddc25fcccec)
+        ;
+
+        
+    
+    
+            var marker_1f336c062e42d0d7e61792503ab01288 = L.marker(
+                [40.71595682436163, -73.96689713001251],
+                {}
+            ).addTo(map_5246f282eacd2e3514bfbb9a18a40e18);
+        
+    
+            var icon_4c0d99c50076905ce70d00e948a808c6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1f336c062e42d0d7e61792503ab01288.setIcon(icon_4c0d99c50076905ce70d00e948a808c6);
+        
+    
+        var popup_32f848bb6d47c86e5bb4e6891fd602ac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fb65de0e3dd367450f26cffad5d93fb8 = $(`<div id="html_fb65de0e3dd367450f26cffad5d93fb8" style="width: 100.0%; height: 100.0%;">Other Half Brewing - Domino Park - Rating: 4.5</div>`)[0];
+                popup_32f848bb6d47c86e5bb4e6891fd602ac.setContent(html_fb65de0e3dd367450f26cffad5d93fb8);
+            
+        
+
+        marker_1f336c062e42d0d7e61792503ab01288.bindPopup(popup_32f848bb6d47c86e5bb4e6891fd602ac)
+        ;
+
+        
+    
+    
+            var marker_6d18807f042db47d1ee3c7148e72f57f = L.marker(
+                [40.69121, -73.98331],
+                {}
+            ).addTo(map_5246f282eacd2e3514bfbb9a18a40e18);
+        
+    
+            var icon_72dad9482399b3874a8f981db0a146a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6d18807f042db47d1ee3c7148e72f57f.setIcon(icon_72dad9482399b3874a8f981db0a146a3);
+        
+    
+        var popup_1ea5cda02c592aab2a01d8dcb6ebe550 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_67ad9a5971d72d2b1b0edfb41d864753 = $(`<div id="html_67ad9a5971d72d2b1b0edfb41d864753" style="width: 100.0%; height: 100.0%;">Sixpoint Brewery at City Point - Rating: 4.5</div>`)[0];
+                popup_1ea5cda02c592aab2a01d8dcb6ebe550.setContent(html_67ad9a5971d72d2b1b0edfb41d864753);
+            
+        
+
+        marker_6d18807f042db47d1ee3c7148e72f57f.bindPopup(popup_1ea5cda02c592aab2a01d8dcb6ebe550)
+        ;
+
+        
+    
+    
+            var marker_1ab01f064222072d4a5e91ee8c17f150 = L.marker(
+                [40.75039580098208, -73.9484289],
+                {}
+            ).addTo(map_5246f282eacd2e3514bfbb9a18a40e18);
+        
+    
+            var icon_b4bded42dc5daf9b0ace7d6ef6e9f882 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1ab01f064222072d4a5e91ee8c17f150.setIcon(icon_b4bded42dc5daf9b0ace7d6ef6e9f882);
+        
+    
+        var popup_7ae823895839d24f3193fe4c27f27ef7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bd7a46223d981cf8e7691ac07a861510 = $(`<div id="html_bd7a46223d981cf8e7691ac07a861510" style="width: 100.0%; height: 100.0%;">Focal Point Beer - Rating: 4.5</div>`)[0];
+                popup_7ae823895839d24f3193fe4c27f27ef7.setContent(html_bd7a46223d981cf8e7691ac07a861510);
+            
+        
+
+        marker_1ab01f064222072d4a5e91ee8c17f150.bindPopup(popup_7ae823895839d24f3193fe4c27f27ef7)
+        ;
+
+        
+    
+    
+            var marker_399a986fa1a4cdc2ef8605ea69c7dfe9 = L.marker(
+                [40.702834, -73.9905026],
+                {}
+            ).addTo(map_5246f282eacd2e3514bfbb9a18a40e18);
+        
+    
+            var icon_e5cdfcc48c61ba5ea7a45071f7abafc5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_399a986fa1a4cdc2ef8605ea69c7dfe9.setIcon(icon_e5cdfcc48c61ba5ea7a45071f7abafc5);
+        
+    
+        var popup_1b952f60e9d8f5c561e6849456fe8c04 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c0efcd451788a67ff45983834bf9677e = $(`<div id="html_c0efcd451788a67ff45983834bf9677e" style="width: 100.0%; height: 100.0%;">Evil Twin Brewing - Dumbo Taproom - Rating: 4.5</div>`)[0];
+                popup_1b952f60e9d8f5c561e6849456fe8c04.setContent(html_c0efcd451788a67ff45983834bf9677e);
+            
+        
+
+        marker_399a986fa1a4cdc2ef8605ea69c7dfe9.bindPopup(popup_1b952f60e9d8f5c561e6849456fe8c04)
+        ;
+
+        
+    
+    
+            var marker_10a9d04f29125e0f50018524b714a747 = L.marker(
+                [40.673875, -73.999095],
+                {}
+            ).addTo(map_5246f282eacd2e3514bfbb9a18a40e18);
+        
+    
+            var icon_fb744aa678c8837a3c5ba2a46a4ccb59 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_10a9d04f29125e0f50018524b714a747.setIcon(icon_fb744aa678c8837a3c5ba2a46a4ccb59);
+        
+    
+        var popup_0c8ec692224052ec1bf1ea230c819e91 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5ed50eac2462a9b572b6a5e20a5d295a = $(`<div id="html_5ed50eac2462a9b572b6a5e20a5d295a" style="width: 100.0%; height: 100.0%;">Other Half Brewing - Rating: 4.5</div>`)[0];
+                popup_0c8ec692224052ec1bf1ea230c819e91.setContent(html_5ed50eac2462a9b572b6a5e20a5d295a);
+            
+        
+
+        marker_10a9d04f29125e0f50018524b714a747.bindPopup(popup_0c8ec692224052ec1bf1ea230c819e91)
+        ;
+
+        
+    
+    
+            var marker_fbadd505f8f01bdf07c6e2fe2499e9cf = L.marker(
+                [40.72884, -73.98965],
+                {}
+            ).addTo(map_5246f282eacd2e3514bfbb9a18a40e18);
+        
+    
+            var icon_624d3c6dea5af249fcd9d8e16f162325 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fbadd505f8f01bdf07c6e2fe2499e9cf.setIcon(icon_624d3c6dea5af249fcd9d8e16f162325);
+        
+    
+        var popup_292c7b6e0741d24c5b8489faee02c204 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aba14f8f48b10ab7204989ab4ce85788 = $(`<div id="html_aba14f8f48b10ab7204989ab4ce85788" style="width: 100.0%; height: 100.0%;">McSorleys Old Ale House - Rating: 4.5</div>`)[0];
+                popup_292c7b6e0741d24c5b8489faee02c204.setContent(html_aba14f8f48b10ab7204989ab4ce85788);
+            
+        
+
+        marker_fbadd505f8f01bdf07c6e2fe2499e9cf.bindPopup(popup_292c7b6e0741d24c5b8489faee02c204)
+        ;
+
+        
+    
+    
+            var marker_2c42766d6ec8beea1d99bd2bf4d44759 = L.marker(
+                [40.68713792548407, -73.9908801],
+                {}
+            ).addTo(map_5246f282eacd2e3514bfbb9a18a40e18);
+        
+    
+            var icon_c7ebd7a4ebd0025f4f132f922db40995 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2c42766d6ec8beea1d99bd2bf4d44759.setIcon(icon_c7ebd7a4ebd0025f4f132f922db40995);
+        
+    
+        var popup_41e3b0e8f23acb12517e04a146bab22e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f11190430610d4ace9a24d86aa49ed75 = $(`<div id="html_f11190430610d4ace9a24d86aa49ed75" style="width: 100.0%; height: 100.0%;">TALEA - Rating: 4.5</div>`)[0];
+                popup_41e3b0e8f23acb12517e04a146bab22e.setContent(html_f11190430610d4ace9a24d86aa49ed75);
+            
+        
+
+        marker_2c42766d6ec8beea1d99bd2bf4d44759.bindPopup(popup_41e3b0e8f23acb12517e04a146bab22e)
+        ;
+
+        
+    
+    
+            var marker_c0dd0316fa7bf06112102a1d06cb06ac = L.marker(
+                [40.67742, -73.98482],
+                {}
+            ).addTo(map_5246f282eacd2e3514bfbb9a18a40e18);
+        
+    
+            var icon_47a7ca1682a78a9a0302e8e135c09699 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c0dd0316fa7bf06112102a1d06cb06ac.setIcon(icon_47a7ca1682a78a9a0302e8e135c09699);
+        
+    
+        var popup_c8aee261b2c5b37071bd0d38af761e1e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d23512005dfed2d00a2c2c209a2bfe7c = $(`<div id="html_d23512005dfed2d00a2c2c209a2bfe7c" style="width: 100.0%; height: 100.0%;">Finback Brewery - Rating: 4.5</div>`)[0];
+                popup_c8aee261b2c5b37071bd0d38af761e1e.setContent(html_d23512005dfed2d00a2c2c209a2bfe7c);
+            
+        
+
+        marker_c0dd0316fa7bf06112102a1d06cb06ac.bindPopup(popup_c8aee261b2c5b37071bd0d38af761e1e)
+        ;
+
+        
+    
+    
+            var marker_0927625597681352d8181b472106e869 = L.marker(
+                [40.698559, -73.971204],
+                {}
+            ).addTo(map_5246f282eacd2e3514bfbb9a18a40e18);
+        
+    
+            var icon_58db5401921d1e148f984bb4698dd8ba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0927625597681352d8181b472106e869.setIcon(icon_58db5401921d1e148f984bb4698dd8ba);
+        
+    
+        var popup_d45441aadd76ec12713ad49fdf3933c5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_01361723496d3b46a6bc5efc77702a3f = $(`<div id="html_01361723496d3b46a6bc5efc77702a3f" style="width: 100.0%; height: 100.0%;">Transmitter Brewing - Rating: 4.5</div>`)[0];
+                popup_d45441aadd76ec12713ad49fdf3933c5.setContent(html_01361723496d3b46a6bc5efc77702a3f);
+            
+        
+
+        marker_0927625597681352d8181b472106e869.bindPopup(popup_d45441aadd76ec12713ad49fdf3933c5)
+        ;
+
+        
+    
+    
+            var marker_46e9f4eb0ddf0ab72d82a087cadbaa10 = L.marker(
+                [40.71790134856336, -73.95652838051319],
+                {}
+            ).addTo(map_5246f282eacd2e3514bfbb9a18a40e18);
+        
+    
+            var icon_2343579a67101b5f81802fe286aa7d4c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_46e9f4eb0ddf0ab72d82a087cadbaa10.setIcon(icon_2343579a67101b5f81802fe286aa7d4c);
+        
+    
+        var popup_b1aac49ca55e3a5b1a056fb21df131df = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1edf043b26bcc182a5ce183439f1b7b1 = $(`<div id="html_1edf043b26bcc182a5ce183439f1b7b1" style="width: 100.0%; height: 100.0%;">EBBS - Rating: 4.5</div>`)[0];
+                popup_b1aac49ca55e3a5b1a056fb21df131df.setContent(html_1edf043b26bcc182a5ce183439f1b7b1);
+            
+        
+
+        marker_46e9f4eb0ddf0ab72d82a087cadbaa10.bindPopup(popup_b1aac49ca55e3a5b1a056fb21df131df)
+        ;
+
+        
+    
+    
+            var marker_eecbac5c04ba0898401fa22d310eb743 = L.marker(
+                [40.7060738809209, -73.9236054652601],
+                {}
+            ).addTo(map_5246f282eacd2e3514bfbb9a18a40e18);
+        
+    
+            var icon_a97987054ad54c3db157560f96022266 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_eecbac5c04ba0898401fa22d310eb743.setIcon(icon_a97987054ad54c3db157560f96022266);
+        
+    
+        var popup_395a2f0526c30a70ad8479001ffac149 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_79a6493faa495a010ba18bb57f2f0925 = $(`<div id="html_79a6493faa495a010ba18bb57f2f0925" style="width: 100.0%; height: 100.0%;">Kings County Brewers Collective - Rating: 4.5</div>`)[0];
+                popup_395a2f0526c30a70ad8479001ffac149.setContent(html_79a6493faa495a010ba18bb57f2f0925);
+            
+        
+
+        marker_eecbac5c04ba0898401fa22d310eb743.bindPopup(popup_395a2f0526c30a70ad8479001ffac149)
+        ;
+
+        
+    
+    
+            var marker_6fc36ebd39f0c7a2b892f9f146d92eb8 = L.marker(
+                [40.721636270191, -73.9576329544152],
+                {}
+            ).addTo(map_5246f282eacd2e3514bfbb9a18a40e18);
+        
+    
+            var icon_7dac5cb95f70ad610e87466fb3c3280e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6fc36ebd39f0c7a2b892f9f146d92eb8.setIcon(icon_7dac5cb95f70ad610e87466fb3c3280e);
+        
+    
+        var popup_790b45ddc0e9f30b8b39ffdf6020ca50 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_63a31df9159f4dcd47f093b835ea7d4e = $(`<div id="html_63a31df9159f4dcd47f093b835ea7d4e" style="width: 100.0%; height: 100.0%;">The Brooklyn Brewery - Rating: 4.0</div>`)[0];
+                popup_790b45ddc0e9f30b8b39ffdf6020ca50.setContent(html_63a31df9159f4dcd47f093b835ea7d4e);
+            
+        
+
+        marker_6fc36ebd39f0c7a2b892f9f146d92eb8.bindPopup(popup_790b45ddc0e9f30b8b39ffdf6020ca50)
+        ;
+
+        
+    
+    
+            var marker_dc19b704c4f4872010ff12543f1352d4 = L.marker(
+                [40.6768103, -73.9841383],
+                {}
+            ).addTo(map_5246f282eacd2e3514bfbb9a18a40e18);
+        
+    
+            var icon_a9cfcafa33f6716575c46c50b18440a6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_dc19b704c4f4872010ff12543f1352d4.setIcon(icon_a9cfcafa33f6716575c46c50b18440a6);
+        
+    
+        var popup_122fc4b1060d06f85609703f57b8f097 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_61d466537667de413691eb1fbbe10a61 = $(`<div id="html_61d466537667de413691eb1fbbe10a61" style="width: 100.0%; height: 100.0%;">Strong Rope Brewery - Rating: 4.5</div>`)[0];
+                popup_122fc4b1060d06f85609703f57b8f097.setContent(html_61d466537667de413691eb1fbbe10a61);
+            
+        
+
+        marker_dc19b704c4f4872010ff12543f1352d4.bindPopup(popup_122fc4b1060d06f85609703f57b8f097)
+        ;
+
+        
+    
+    
+            var marker_aef01d0960eed0ad7706005bde18cb5d = L.marker(
+                [40.714256, -73.9365791],
+                {}
+            ).addTo(map_5246f282eacd2e3514bfbb9a18a40e18);
+        
+    
+            var icon_af10705b62808d3dac428f89eb38977e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_aef01d0960eed0ad7706005bde18cb5d.setIcon(icon_af10705b62808d3dac428f89eb38977e);
+        
+    
+        var popup_3237d1d29d1d4a43e46f1438aae9217d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3743cfccfc4f8910d4d7482e30abfaca = $(`<div id="html_3743cfccfc4f8910d4d7482e30abfaca" style="width: 100.0%; height: 100.0%;">Grimm Artisanal Ales - Rating: 4.5</div>`)[0];
+                popup_3237d1d29d1d4a43e46f1438aae9217d.setContent(html_3743cfccfc4f8910d4d7482e30abfaca);
+            
+        
+
+        marker_aef01d0960eed0ad7706005bde18cb5d.bindPopup(popup_3237d1d29d1d4a43e46f1438aae9217d)
+        ;
+
+        
+    
+    
+            var marker_d9e2d64c870b9d326bcec4ad9e4509db = L.marker(
+                [40.746571, -73.951518],
+                {}
+            ).addTo(map_5246f282eacd2e3514bfbb9a18a40e18);
+        
+    
+            var icon_43cc8ab591ef2840c3cec12c5acd611e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d9e2d64c870b9d326bcec4ad9e4509db.setIcon(icon_43cc8ab591ef2840c3cec12c5acd611e);
+        
+    
+        var popup_efaf1aa69b0b00f8438724d21b8d1f13 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5339a0abe6a8e8082c377a969e3a465b = $(`<div id="html_5339a0abe6a8e8082c377a969e3a465b" style="width: 100.0%; height: 100.0%;">Fifth Hammer Brewing - Rating: 4.5</div>`)[0];
+                popup_efaf1aa69b0b00f8438724d21b8d1f13.setContent(html_5339a0abe6a8e8082c377a969e3a465b);
+            
+        
+
+        marker_d9e2d64c870b9d326bcec4ad9e4509db.bindPopup(popup_efaf1aa69b0b00f8438724d21b8d1f13)
+        ;
+
+        
+    
+    
+            var marker_644635ba7133bfbf8d10523743b17fed = L.marker(
+                [40.7470981842068, -73.9549534404755],
+                {}
+            ).addTo(map_5246f282eacd2e3514bfbb9a18a40e18);
+        
+    
+            var icon_686f3da2ddb5cea4f513bec81ed7bcba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_644635ba7133bfbf8d10523743b17fed.setIcon(icon_686f3da2ddb5cea4f513bec81ed7bcba);
+        
+    
+        var popup_e33d525e7ee8a521408f8e924bf23ca6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f54c2428f9d82e41bed63d3a8a3e272a = $(`<div id="html_f54c2428f9d82e41bed63d3a8a3e272a" style="width: 100.0%; height: 100.0%;">Rockaway Brewing Company - Rating: 4.5</div>`)[0];
+                popup_e33d525e7ee8a521408f8e924bf23ca6.setContent(html_f54c2428f9d82e41bed63d3a8a3e272a);
+            
+        
+
+        marker_644635ba7133bfbf8d10523743b17fed.bindPopup(popup_e33d525e7ee8a521408f8e924bf23ca6)
+        ;
+
+        
+    
+    
+            var marker_e165e9a121830c3b6f198a0de3116cf3 = L.marker(
+                [40.67747, -74.0188],
+                {}
+            ).addTo(map_5246f282eacd2e3514bfbb9a18a40e18);
+        
+    
+            var icon_5cdc5e6af86ef9947efe2367c8e5ed4b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e165e9a121830c3b6f198a0de3116cf3.setIcon(icon_5cdc5e6af86ef9947efe2367c8e5ed4b);
+        
+    
+        var popup_5f43425a3e70880c99711ede24da6143 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0be3c4170f0d22d72ccaf29626b41825 = $(`<div id="html_0be3c4170f0d22d72ccaf29626b41825" style="width: 100.0%; height: 100.0%;">Strong Rope Brewery - Rating: 4.5</div>`)[0];
+                popup_5f43425a3e70880c99711ede24da6143.setContent(html_0be3c4170f0d22d72ccaf29626b41825);
+            
+        
+
+        marker_e165e9a121830c3b6f198a0de3116cf3.bindPopup(popup_5f43425a3e70880c99711ede24da6143)
+        ;
+
+        
+    
+    
+            var marker_4cec43d7123a86069a84ddb90fc05997 = L.marker(
+                [40.678679, -73.9835991],
+                {}
+            ).addTo(map_5246f282eacd2e3514bfbb9a18a40e18);
+        
+    
+            var icon_2497aefd98918fa45aa03065cc06c89a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_4cec43d7123a86069a84ddb90fc05997.setIcon(icon_2497aefd98918fa45aa03065cc06c89a);
+        
+    
+        var popup_7c91bc2753d97120f820c67de354e5fa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7d873262f3eadadac6f69befd1626b1c = $(`<div id="html_7d873262f3eadadac6f69befd1626b1c" style="width: 100.0%; height: 100.0%;">Wild East Brewing Co. - Rating: 4.5</div>`)[0];
+                popup_7c91bc2753d97120f820c67de354e5fa.setContent(html_7d873262f3eadadac6f69befd1626b1c);
+            
+        
+
+        marker_4cec43d7123a86069a84ddb90fc05997.bindPopup(popup_7c91bc2753d97120f820c67de354e5fa)
+        ;
+
+        
+    
+    
+            var marker_ade81a38a5ad9d054cc0e1558adc0b26 = L.marker(
+                [40.7520775, -73.9505905],
+                {}
+            ).addTo(map_5246f282eacd2e3514bfbb9a18a40e18);
+        
+    
+            var icon_ad8827132d03faf206422d2a0fd2337c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ade81a38a5ad9d054cc0e1558adc0b26.setIcon(icon_ad8827132d03faf206422d2a0fd2337c);
+        
+    
+        var popup_a9d849387d3e263619060aec9a8ab994 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b036356f250d6a534f9f84bc8ee858ca = $(`<div id="html_b036356f250d6a534f9f84bc8ee858ca" style="width: 100.0%; height: 100.0%;">Big aLICe Brewing - Rating: 4.5</div>`)[0];
+                popup_a9d849387d3e263619060aec9a8ab994.setContent(html_b036356f250d6a534f9f84bc8ee858ca);
+            
+        
+
+        marker_ade81a38a5ad9d054cc0e1558adc0b26.bindPopup(popup_a9d849387d3e263619060aec9a8ab994)
+        ;
+
+        
+    
+    
+            var marker_eb8633ec064060df0689fada49cffb06 = L.marker(
+                [40.778392779817565, -73.90180824037544],
+                {}
+            ).addTo(map_5246f282eacd2e3514bfbb9a18a40e18);
+        
+    
+            var icon_0a38bb8aaac8ee23ff3fbbd1cc269b4a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_eb8633ec064060df0689fada49cffb06.setIcon(icon_0a38bb8aaac8ee23ff3fbbd1cc269b4a);
+        
+    
+        var popup_9ed15539fcfc22fc3ce2b93665f2523c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cb5ef642717fb2bdc8f3e57d9767f65d = $(`<div id="html_cb5ef642717fb2bdc8f3e57d9767f65d" style="width: 100.0%; height: 100.0%;">SingleCut Beersmiths - Rating: 4.0</div>`)[0];
+                popup_9ed15539fcfc22fc3ce2b93665f2523c.setContent(html_cb5ef642717fb2bdc8f3e57d9767f65d);
+            
+        
+
+        marker_eb8633ec064060df0689fada49cffb06.bindPopup(popup_9ed15539fcfc22fc3ce2b93665f2523c)
+        ;
+
+        
+    
+    
+            var marker_03a028754f701ecb3938a0f195e79b55 = L.marker(
+                [40.74694, -73.92524],
+                {}
+            ).addTo(map_5246f282eacd2e3514bfbb9a18a40e18);
+        
+    
+            var icon_603dc2623fa53b545a48d13333e2a883 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_03a028754f701ecb3938a0f195e79b55.setIcon(icon_603dc2623fa53b545a48d13333e2a883);
+        
+    
+        var popup_82650f246595ccf518630467de7405f6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cbd8fa9b171ed318d09be78ed5ae4078 = $(`<div id="html_cbd8fa9b171ed318d09be78ed5ae4078" style="width: 100.0%; height: 100.0%;">Alewife Brewing & Taproom - Rating: 4.5</div>`)[0];
+                popup_82650f246595ccf518630467de7405f6.setContent(html_cbd8fa9b171ed318d09be78ed5ae4078);
+            
+        
+
+        marker_03a028754f701ecb3938a0f195e79b55.bindPopup(popup_82650f246595ccf518630467de7405f6)
+        ;
+
+        
+    
+    
+            var marker_898d85b959e75e4c18491dd67b4803e1 = L.marker(
+                [40.65062, -74.01446],
+                {}
+            ).addTo(map_5246f282eacd2e3514bfbb9a18a40e18);
+        
+    
+            var icon_027ff5fb348d89b87abb8780e3f167fa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_898d85b959e75e4c18491dd67b4803e1.setIcon(icon_027ff5fb348d89b87abb8780e3f167fa);
+        
+    
+        var popup_e48230b251a371df81fb38caee252a7b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5edbaca4e17e40e7b133338b25452bfb = $(`<div id="html_5edbaca4e17e40e7b133338b25452bfb" style="width: 100.0%; height: 100.0%;">Five Boroughs Brewing Co - Rating: 4.5</div>`)[0];
+                popup_e48230b251a371df81fb38caee252a7b.setContent(html_5edbaca4e17e40e7b133338b25452bfb);
+            
+        
+
+        marker_898d85b959e75e4c18491dd67b4803e1.bindPopup(popup_e48230b251a371df81fb38caee252a7b)
+        ;
+
+        
+    
+    
+            var marker_9c153a25bf4bf91b454bce0cb522f875 = L.marker(
+                [40.72866, -74.00472],
+                {}
+            ).addTo(map_5246f282eacd2e3514bfbb9a18a40e18);
+        
+    
+            var icon_fa0cf7580ff7c25624ca6601f3256493 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9c153a25bf4bf91b454bce0cb522f875.setIcon(icon_fa0cf7580ff7c25624ca6601f3256493);
+        
+    
+        var popup_6179f415ec6f8ed4cf52b35a176fbd77 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9af5e600c8077dfc65e764995abeca20 = $(`<div id="html_9af5e600c8077dfc65e764995abeca20" style="width: 100.0%; height: 100.0%;">Houston Hall - Rating: 3.5</div>`)[0];
+                popup_6179f415ec6f8ed4cf52b35a176fbd77.setContent(html_9af5e600c8077dfc65e764995abeca20);
+            
+        
+
+        marker_9c153a25bf4bf91b454bce0cb522f875.bindPopup(popup_6179f415ec6f8ed4cf52b35a176fbd77)
+        ;
+
+        
+    
+    
+            var marker_56705d4c5af50ab9a5ed1c48bc8af247 = L.marker(
+                [40.6740226745605, -74.0118637084961],
+                {}
+            ).addTo(map_5246f282eacd2e3514bfbb9a18a40e18);
+        
+    
+            var icon_226b99a69e33a5d9d64e6be8483a8363 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_56705d4c5af50ab9a5ed1c48bc8af247.setIcon(icon_226b99a69e33a5d9d64e6be8483a8363);
+        
+    
+        var popup_5aa35173a6baf2cac6b2c67e8862e960 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_619a283faf916695bde649d8077a7071 = $(`<div id="html_619a283faf916695bde649d8077a7071" style="width: 100.0%; height: 100.0%;">Sixpoint Brewery - Rating: 4.5</div>`)[0];
+                popup_5aa35173a6baf2cac6b2c67e8862e960.setContent(html_619a283faf916695bde649d8077a7071);
+            
+        
+
+        marker_56705d4c5af50ab9a5ed1c48bc8af247.bindPopup(popup_5aa35173a6baf2cac6b2c67e8862e960)
+        ;
+
+        
+    
+    
+            var marker_19573ff026ebf574f9b34cc6019bb022 = L.marker(
+                [40.712598, -73.936906],
+                {}
+            ).addTo(map_5246f282eacd2e3514bfbb9a18a40e18);
+        
+    
+            var icon_60b9465d60203f83667864cd377f3b0a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_19573ff026ebf574f9b34cc6019bb022.setIcon(icon_60b9465d60203f83667864cd377f3b0a);
+        
+    
+        var popup_00bf55c686959f6cf7f935105239e7e1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_583f21d29ae0422859b0e43cc583f549 = $(`<div id="html_583f21d29ae0422859b0e43cc583f549" style="width: 100.0%; height: 100.0%;">Interboro Spirits and Ales - Rating: 4.5</div>`)[0];
+                popup_00bf55c686959f6cf7f935105239e7e1.setContent(html_583f21d29ae0422859b0e43cc583f549);
+            
+        
+
+        marker_19573ff026ebf574f9b34cc6019bb022.bindPopup(popup_00bf55c686959f6cf7f935105239e7e1)
+        ;
+
+        
+    
+    
+            var marker_1da9a473a45e8a792ca3d97127d50715 = L.marker(
+                [40.7548729, -73.939375],
+                {}
+            ).addTo(map_5246f282eacd2e3514bfbb9a18a40e18);
+        
+    
+            var icon_75b292c3813e2f585e77c91d3f24680f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1da9a473a45e8a792ca3d97127d50715.setIcon(icon_75b292c3813e2f585e77c91d3f24680f);
+        
+    
+        var popup_0de2ab49310e645cecd4e64eef78c46e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eee527e8d74dce8049d6a0f5e695f1b4 = $(`<div id="html_eee527e8d74dce8049d6a0f5e695f1b4" style="width: 100.0%; height: 100.0%;">LIC Beer Project - Rating: 4.0</div>`)[0];
+                popup_0de2ab49310e645cecd4e64eef78c46e.setContent(html_eee527e8d74dce8049d6a0f5e695f1b4);
+            
+        
+
+        marker_1da9a473a45e8a792ca3d97127d50715.bindPopup(popup_0de2ab49310e645cecd4e64eef78c46e)
+        ;
+
+        
+    
+    
+            var marker_3ddd475e1a32b0b345d0f7655da4f25a = L.marker(
+                [40.7491302490234, -73.9923629760742],
+                {}
+            ).addTo(map_5246f282eacd2e3514bfbb9a18a40e18);
+        
+    
+            var icon_8123903832790706798dfa62e6a8cb2c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3ddd475e1a32b0b345d0f7655da4f25a.setIcon(icon_8123903832790706798dfa62e6a8cb2c);
+        
+    
+        var popup_2dd0dcb0038f027407fedc888fe3e3ec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_869b9ee57fb3c17615cfc3d18b409502 = $(`<div id="html_869b9ee57fb3c17615cfc3d18b409502" style="width: 100.0%; height: 100.0%;">City Brew Tours NYC - Rating: 5.0</div>`)[0];
+                popup_2dd0dcb0038f027407fedc888fe3e3ec.setContent(html_869b9ee57fb3c17615cfc3d18b409502);
+            
+        
+
+        marker_3ddd475e1a32b0b345d0f7655da4f25a.bindPopup(popup_2dd0dcb0038f027407fedc888fe3e3ec)
+        ;
+
+        
+    
+    
+            var marker_04da32ed543ee61156561de2e1129091 = L.marker(
+                [40.657123, -74.00632],
+                {}
+            ).addTo(map_5246f282eacd2e3514bfbb9a18a40e18);
+        
+    
+            var icon_ade595d954e53a31a5b8765ad3bb0131 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_04da32ed543ee61156561de2e1129091.setIcon(icon_ade595d954e53a31a5b8765ad3bb0131);
+        
+    
+        var popup_98c0493ef92aa63d19b6f8f4ce53aaa9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fee6ddf85c4d98a74b98e67d9f870e1a = $(`<div id="html_fee6ddf85c4d98a74b98e67d9f870e1a" style="width: 100.0%; height: 100.0%;">Brooklyn Kura - Rating: 4.5</div>`)[0];
+                popup_98c0493ef92aa63d19b6f8f4ce53aaa9.setContent(html_fee6ddf85c4d98a74b98e67d9f870e1a);
+            
+        
+
+        marker_04da32ed543ee61156561de2e1129091.bindPopup(popup_98c0493ef92aa63d19b6f8f4ce53aaa9)
+        ;
+
+        
+    
+    
+            var marker_c1df3e9adab0fa57edc2a5849664c458 = L.marker(
+                [40.80193035797194, -73.9105880948574],
+                {}
+            ).addTo(map_5246f282eacd2e3514bfbb9a18a40e18);
+        
+    
+            var icon_678fa02dc4af7c79d0ea617f98fb7379 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_c1df3e9adab0fa57edc2a5849664c458.setIcon(icon_678fa02dc4af7c79d0ea617f98fb7379);
+        
+    
+        var popup_e8a389602aab556bd2d56382852a77a7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c86f72d7408db24b45e0392e0951cf2e = $(`<div id="html_c86f72d7408db24b45e0392e0951cf2e" style="width: 100.0%; height: 100.0%;">The Bronx Brewery - Rating: 4.0</div>`)[0];
+                popup_e8a389602aab556bd2d56382852a77a7.setContent(html_c86f72d7408db24b45e0392e0951cf2e);
+            
+        
+
+        marker_c1df3e9adab0fa57edc2a5849664c458.bindPopup(popup_e8a389602aab556bd2d56382852a77a7)
+        ;
+
+        
+    
+    
+            var marker_902957e09d632e55b51fffa264107ba9 = L.marker(
+                [40.657401, -74.0068205],
+                {}
+            ).addTo(map_5246f282eacd2e3514bfbb9a18a40e18);
+        
+    
+            var icon_a486e18edf64cf8e373f091219565d35 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_902957e09d632e55b51fffa264107ba9.setIcon(icon_a486e18edf64cf8e373f091219565d35);
+        
+    
+        var popup_8c10a85dad55709dd2c7a232c2b35eff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_798824ec9ad272e0b8d726d4b6627f77 = $(`<div id="html_798824ec9ad272e0b8d726d4b6627f77" style="width: 100.0%; height: 100.0%;">Big aLICe Barrel Room - Rating: 4.5</div>`)[0];
+                popup_8c10a85dad55709dd2c7a232c2b35eff.setContent(html_798824ec9ad272e0b8d726d4b6627f77);
+            
+        
+
+        marker_902957e09d632e55b51fffa264107ba9.bindPopup(popup_8c10a85dad55709dd2c7a232c2b35eff)
+        ;
+
+        
+    
+    
+            var marker_cd878cc66a7b3f2ab52f347f263dedfa = L.marker(
+                [40.6372153, -74.0755918],
+                {}
+            ).addTo(map_5246f282eacd2e3514bfbb9a18a40e18);
+        
+    
+            var icon_dd3306d63d15a9a6dba9927cc0f61e92 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_cd878cc66a7b3f2ab52f347f263dedfa.setIcon(icon_dd3306d63d15a9a6dba9927cc0f61e92);
+        
+    
+        var popup_aec9deb012d3c7d7f36c80bfd8148d9f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_98a71bd9ddedfc91f17eead015a2adaf = $(`<div id="html_98a71bd9ddedfc91f17eead015a2adaf" style="width: 100.0%; height: 100.0%;">Flagship Brewing - Rating: 4.5</div>`)[0];
+                popup_aec9deb012d3c7d7f36c80bfd8148d9f.setContent(html_98a71bd9ddedfc91f17eead015a2adaf);
+            
+        
+
+        marker_cd878cc66a7b3f2ab52f347f263dedfa.bindPopup(popup_aec9deb012d3c7d7f36c80bfd8148d9f)
+        ;
+
+        
+    
+    
+            var marker_c264ee505ce98a3acf8128635b8b73b0 = L.marker(
+                [40.719652, -73.939498],
+                {}
+            ).addTo(map_5246f282eacd2e3514bfbb9a18a40e18);
+        
+    
+            var icon_e81d80bf74c25416f2ea288b937614b8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c264ee505ce98a3acf8128635b8b73b0.setIcon(icon_e81d80bf74c25416f2ea288b937614b8);
+        
+    
+        var popup_e1ec1a84dd1b80d795c48e7b09654ad8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_950f2d97f85c254b0b2faaa1e520da8b = $(`<div id="html_950f2d97f85c254b0b2faaa1e520da8b" style="width: 100.0%; height: 100.0%;">18th Ward Brewing - Rating: 4.0</div>`)[0];
+                popup_e1ec1a84dd1b80d795c48e7b09654ad8.setContent(html_950f2d97f85c254b0b2faaa1e520da8b);
+            
+        
+
+        marker_c264ee505ce98a3acf8128635b8b73b0.bindPopup(popup_e1ec1a84dd1b80d795c48e7b09654ad8)
+        ;
+
+        
+    
+    
+            var marker_0be30e24e17d8ca4391b874c26990227 = L.marker(
+                [40.71193265799793, -73.96350681781769],
+                {}
+            ).addTo(map_5246f282eacd2e3514bfbb9a18a40e18);
+        
+    
+            var icon_60355028e8ce9b24f38e23606df7bc03 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0be30e24e17d8ca4391b874c26990227.setIcon(icon_60355028e8ce9b24f38e23606df7bc03);
+        
+    
+        var popup_73c775cb385007d054cfcee37e5cac68 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fe4341eec30c9cdbd0f8bec01b49447d = $(`<div id="html_fe4341eec30c9cdbd0f8bec01b49447d" style="width: 100.0%; height: 100.0%;">Keg & Lantern Brewing Company - Rating: 4.0</div>`)[0];
+                popup_73c775cb385007d054cfcee37e5cac68.setContent(html_fe4341eec30c9cdbd0f8bec01b49447d);
+            
+        
+
+        marker_0be30e24e17d8ca4391b874c26990227.bindPopup(popup_73c775cb385007d054cfcee37e5cac68)
+        ;
+
+        
+    
+    
+            var marker_a4ca5fc9de65d4c793d754ea523690b2 = L.marker(
+                [40.675765, -74.015756],
+                {}
+            ).addTo(map_5246f282eacd2e3514bfbb9a18a40e18);
+        
+    
+            var icon_5df2d3355344ac06d7b5cb488108377b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a4ca5fc9de65d4c793d754ea523690b2.setIcon(icon_5df2d3355344ac06d7b5cb488108377b);
+        
+    
+        var popup_e863fbe3638abce3514e90bf8e6b29fd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f272823d55087898d77e145d2ec79453 = $(`<div id="html_f272823d55087898d77e145d2ec79453" style="width: 100.0%; height: 100.0%;">Keg & Lantern Brewing - Rating: 4.5</div>`)[0];
+                popup_e863fbe3638abce3514e90bf8e6b29fd.setContent(html_f272823d55087898d77e145d2ec79453);
+            
+        
+
+        marker_a4ca5fc9de65d4c793d754ea523690b2.bindPopup(popup_e863fbe3638abce3514e90bf8e6b29fd)
+        ;
+
+        
+    
+    
+            var marker_d206bf03ddf920741ad5f67ce99d7231 = L.marker(
+                [40.73768, -73.9552235],
+                {}
+            ).addTo(map_5246f282eacd2e3514bfbb9a18a40e18);
+        
+    
+            var icon_0f8433e2f68c29afe75ceea7c28a245e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d206bf03ddf920741ad5f67ce99d7231.setIcon(icon_0f8433e2f68c29afe75ceea7c28a245e);
+        
+    
+        var popup_060e6595493905458e06d92e0b4a4b14 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_16235315161aa4177fee93ea5212e458 = $(`<div id="html_16235315161aa4177fee93ea5212e458" style="width: 100.0%; height: 100.0%;">Greenpoint Beer & Ale Co. - Rating: 3.5</div>`)[0];
+                popup_060e6595493905458e06d92e0b4a4b14.setContent(html_16235315161aa4177fee93ea5212e458);
+            
+        
+
+        marker_d206bf03ddf920741ad5f67ce99d7231.bindPopup(popup_060e6595493905458e06d92e0b4a4b14)
+        ;
+
+        
+    
+    
+            var marker_20bc675afc78880a4fddc304fc598977 = L.marker(
+                [40.753369, -74.001035],
+                {}
+            ).addTo(map_5246f282eacd2e3514bfbb9a18a40e18);
+        
+    
+            var icon_dfb8d3eb063d3428d187090eba4971e5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_20bc675afc78880a4fddc304fc598977.setIcon(icon_dfb8d3eb063d3428d187090eba4971e5);
+        
+    
+        var popup_743792181ed24dc8256ed732c3ef02af = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d8df22de5b1056e67ad55f05f45ee2db = $(`<div id="html_d8df22de5b1056e67ad55f05f45ee2db" style="width: 100.0%; height: 100.0%;">The Bronx Brewery - Rating: 4.5</div>`)[0];
+                popup_743792181ed24dc8256ed732c3ef02af.setContent(html_d8df22de5b1056e67ad55f05f45ee2db);
+            
+        
+
+        marker_20bc675afc78880a4fddc304fc598977.bindPopup(popup_743792181ed24dc8256ed732c3ef02af)
+        ;
+
+        
+    
+    
+            var marker_a14a3b06ba7a17465c70abd82d99f566 = L.marker(
+                [40.67848, -73.95501],
+                {}
+            ).addTo(map_5246f282eacd2e3514bfbb9a18a40e18);
+        
+    
+            var icon_4002618f876b799eccd026cd667397b4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a14a3b06ba7a17465c70abd82d99f566.setIcon(icon_4002618f876b799eccd026cd667397b4);
+        
+    
+        var popup_cec0904b7baa878c3f2bac7d3f12c1b9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_57ec7a6e208e45a37bb503bcfb82f162 = $(`<div id="html_57ec7a6e208e45a37bb503bcfb82f162" style="width: 100.0%; height: 100.0%;">Endless Life Brewing - Rating: 5.0</div>`)[0];
+                popup_cec0904b7baa878c3f2bac7d3f12c1b9.setContent(html_57ec7a6e208e45a37bb503bcfb82f162);
+            
+        
+
+        marker_a14a3b06ba7a17465c70abd82d99f566.bindPopup(popup_cec0904b7baa878c3f2bac7d3f12c1b9)
+        ;
+
+        
+    
+    
+            var marker_f9cd273cd5d7cd3bbd41b91f4f4058b0 = L.marker(
+                [40.63636133, -74.077522],
+                {}
+            ).addTo(map_5246f282eacd2e3514bfbb9a18a40e18);
+        
+    
+            var icon_1e2b40eea8291c7ae3bef670c495f162 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_f9cd273cd5d7cd3bbd41b91f4f4058b0.setIcon(icon_1e2b40eea8291c7ae3bef670c495f162);
+        
+    
+        var popup_d92521ca37ec572715b2cb361b440ba0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b93e827c40d4dbc67cbd85c4f45b9d84 = $(`<div id="html_b93e827c40d4dbc67cbd85c4f45b9d84" style="width: 100.0%; height: 100.0%;">Kills Boro Brewing - Rating: 4.5</div>`)[0];
+                popup_d92521ca37ec572715b2cb361b440ba0.setContent(html_b93e827c40d4dbc67cbd85c4f45b9d84);
+            
+        
+
+        marker_f9cd273cd5d7cd3bbd41b91f4f4058b0.bindPopup(popup_d92521ca37ec572715b2cb361b440ba0)
+        ;
+
+        
+    
+    
+            var marker_8f230a600f7a52156e25ea58a86b5232 = L.marker(
+                [40.70598115451018, -73.9237752098206],
+                {}
+            ).addTo(map_5246f282eacd2e3514bfbb9a18a40e18);
+        
+    
+            var icon_88ca8209c3930806edac40ae0990e0ee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8f230a600f7a52156e25ea58a86b5232.setIcon(icon_88ca8209c3930806edac40ae0990e0ee);
+        
+    
+        var popup_9f9408c7f8cbfadabc4a4405a56aff51 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b31d2f8f05debfc36a631f32ae1aff66 = $(`<div id="html_b31d2f8f05debfc36a631f32ae1aff66" style="width: 100.0%; height: 100.0%;">Kato Sake Works - Rating: 4.5</div>`)[0];
+                popup_9f9408c7f8cbfadabc4a4405a56aff51.setContent(html_b31d2f8f05debfc36a631f32ae1aff66);
+            
+        
+
+        marker_8f230a600f7a52156e25ea58a86b5232.bindPopup(popup_9f9408c7f8cbfadabc4a4405a56aff51)
+        ;
+
+        
+    
+    
+            var marker_9eeca48ff3c6c028310c12ea635a6f0b = L.marker(
+                [40.6577507791343, -73.95006209635457],
+                {}
+            ).addTo(map_5246f282eacd2e3514bfbb9a18a40e18);
+        
+    
+            var icon_e2990f26b94404dca9b76621b2a5771c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_9eeca48ff3c6c028310c12ea635a6f0b.setIcon(icon_e2990f26b94404dca9b76621b2a5771c);
+        
+    
+        var popup_c8c770496ebaf464a2258daefd225605 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_40723468e0f4db97887debcc60c08252 = $(`<div id="html_40723468e0f4db97887debcc60c08252" style="width: 100.0%; height: 100.0%;">Market Bar And Brewery - Rating: 4.0</div>`)[0];
+                popup_c8c770496ebaf464a2258daefd225605.setContent(html_40723468e0f4db97887debcc60c08252);
+            
+        
+
+        marker_9eeca48ff3c6c028310c12ea635a6f0b.bindPopup(popup_c8c770496ebaf464a2258daefd225605)
+        ;
+
+        
+    
+    
+            var marker_d0c58fd8f6d4e465ba7876d7edcdc7ec = L.marker(
+                [40.7515964, -74.003589],
+                {}
+            ).addTo(map_5246f282eacd2e3514bfbb9a18a40e18);
+        
+    
+            var icon_0fc164f2440d007f8f9d1e60128d5bcd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d0c58fd8f6d4e465ba7876d7edcdc7ec.setIcon(icon_0fc164f2440d007f8f9d1e60128d5bcd);
+        
+    
+        var popup_a55a0312babdfc4cfef413b310ed3aac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3bb9125890fe315a3301794974a85cfc = $(`<div id="html_3bb9125890fe315a3301794974a85cfc" style="width: 100.0%; height: 100.0%;">NYC Craft Beer Festival - Rating: 3.5</div>`)[0];
+                popup_a55a0312babdfc4cfef413b310ed3aac.setContent(html_3bb9125890fe315a3301794974a85cfc);
+            
+        
+
+        marker_d0c58fd8f6d4e465ba7876d7edcdc7ec.bindPopup(popup_a55a0312babdfc4cfef413b310ed3aac)
+        ;
+
+        
+    
+    
+            var marker_0bf608b6a627453d35f19094224e06fc = L.marker(
+                [40.67963, -73.98227],
+                {}
+            ).addTo(map_5246f282eacd2e3514bfbb9a18a40e18);
+        
+    
+            var icon_ecdfa0d13ef2051ba0630060c9e4d9b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0bf608b6a627453d35f19094224e06fc.setIcon(icon_ecdfa0d13ef2051ba0630060c9e4d9b2);
+        
+    
+        var popup_d8df12d35db2662362c534b2470655b4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_52fc6609aadcedc3797b15d0493c6897 = $(`<div id="html_52fc6609aadcedc3797b15d0493c6897" style="width: 100.0%; height: 100.0%;">The Meat Hook at Threes - Rating: 3.5</div>`)[0];
+                popup_d8df12d35db2662362c534b2470655b4.setContent(html_52fc6609aadcedc3797b15d0493c6897);
+            
+        
+
+        marker_0bf608b6a627453d35f19094224e06fc.bindPopup(popup_d8df12d35db2662362c534b2470655b4)
+        ;
+
+        
+    
+    
+            var marker_b283ab79d39747f0d0fb4d354dba0505 = L.marker(
+                [40.720848, -74.004638],
+                {}
+            ).addTo(map_5246f282eacd2e3514bfbb9a18a40e18);
+        
+    
+            var icon_62e94342441a07688ed7e34ae2f4f322 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b283ab79d39747f0d0fb4d354dba0505.setIcon(icon_62e94342441a07688ed7e34ae2f4f322);
+        
+    
+        var popup_4cd2aca773dd1ea546bf14baa724bfda = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5ed200e3768913fbda4ea1e99541fec2 = $(`<div id="html_5ed200e3768913fbda4ea1e99541fec2" style="width: 100.0%; height: 100.0%;">World Sake Imports- New York - Rating: 5.0</div>`)[0];
+                popup_4cd2aca773dd1ea546bf14baa724bfda.setContent(html_5ed200e3768913fbda4ea1e99541fec2);
+            
+        
+
+        marker_b283ab79d39747f0d0fb4d354dba0505.bindPopup(popup_4cd2aca773dd1ea546bf14baa724bfda)
+        ;
+
+        
+    
+    
+            var marker_be56285973ca3636f3e0559be3805bc7 = L.marker(
+                [40.657167, -74.006547],
+                {}
+            ).addTo(map_5246f282eacd2e3514bfbb9a18a40e18);
+        
+    
+            var icon_bb50752276149956f3b89e4a915a59b9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_be56285973ca3636f3e0559be3805bc7.setIcon(icon_bb50752276149956f3b89e4a915a59b9);
+        
+    
+        var popup_9b411cfb20c809de528d294dd21c7a05 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4fd8e8a765ee690acf24c26a75cfcd45 = $(`<div id="html_4fd8e8a765ee690acf24c26a75cfcd45" style="width: 100.0%; height: 100.0%;">Gun Hill Publick House - Rating: 5.0</div>`)[0];
+                popup_9b411cfb20c809de528d294dd21c7a05.setContent(html_4fd8e8a765ee690acf24c26a75cfcd45);
+            
+        
+
+        marker_be56285973ca3636f3e0559be3805bc7.bindPopup(popup_9b411cfb20c809de528d294dd21c7a05)
+        ;
+
+        
+    
+    
+            var marker_211d04ca582594469e92065a2c8c17b3 = L.marker(
+                [40.73654729522936, -73.98991840000001],
+                {}
+            ).addTo(map_5246f282eacd2e3514bfbb9a18a40e18);
+        
+    
+            var icon_1f785753f9a47fb912f2144ed3348a1e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_211d04ca582594469e92065a2c8c17b3.setIcon(icon_1f785753f9a47fb912f2144ed3348a1e);
+        
+    
+        var popup_781d93fb87b6bf6bbef10b28e6ad09a4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_554ac4a086d6ddab2a1ff4dd4231d744 = $(`<div id="html_554ac4a086d6ddab2a1ff4dd4231d744" style="width: 100.0%; height: 100.0%;">Torch & Crown Brewing - Rating: 3.0</div>`)[0];
+                popup_781d93fb87b6bf6bbef10b28e6ad09a4.setContent(html_554ac4a086d6ddab2a1ff4dd4231d744);
+            
+        
+
+        marker_211d04ca582594469e92065a2c8c17b3.bindPopup(popup_781d93fb87b6bf6bbef10b28e6ad09a4)
+        ;
+
+        
+    
+    
+            var marker_23eb58232f8190c392ef65d7fb7f3992 = L.marker(
+                [40.75157, -73.996984],
+                {}
+            ).addTo(map_5246f282eacd2e3514bfbb9a18a40e18);
+        
+    
+            var icon_67a4b20c76a55fea2f13c0f11d551fe0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_23eb58232f8190c392ef65d7fb7f3992.setIcon(icon_67a4b20c76a55fea2f13c0f11d551fe0);
+        
+    
+        var popup_ddcd71418089873c60ba1ef054512cb1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cf349880ff1ca34140f116456bae08d6 = $(`<div id="html_cf349880ff1ca34140f116456bae08d6" style="width: 100.0%; height: 100.0%;">Threes Brewing - Moynihan - Rating: 3.0</div>`)[0];
+                popup_ddcd71418089873c60ba1ef054512cb1.setContent(html_cf349880ff1ca34140f116456bae08d6);
+            
+        
+
+        marker_23eb58232f8190c392ef65d7fb7f3992.bindPopup(popup_ddcd71418089873c60ba1ef054512cb1)
+        ;
+
+        
+    
+    
+            var marker_5cc1b436be14e3b0a36c4346292a5335 = L.marker(
+                [40.67394, -74.01197],
+                {}
+            ).addTo(map_5246f282eacd2e3514bfbb9a18a40e18);
+        
+    
+            var icon_a51ef89ab7f3cb2ad34e858f6059130c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_5cc1b436be14e3b0a36c4346292a5335.setIcon(icon_a51ef89ab7f3cb2ad34e858f6059130c);
+        
+    
+        var popup_31e3c2ae3d0477f420ba4a21701cef95 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2025bc566e5adc8dc5c17be891555e28 = $(`<div id="html_2025bc566e5adc8dc5c17be891555e28" style="width: 100.0%; height: 100.0%;">Brownstone Ale - Rating: 1.0</div>`)[0];
+                popup_31e3c2ae3d0477f420ba4a21701cef95.setContent(html_2025bc566e5adc8dc5c17be891555e28);
+            
+        
+
+        marker_5cc1b436be14e3b0a36c4346292a5335.bindPopup(popup_31e3c2ae3d0477f420ba4a21701cef95)
+        ;
+
+        
+    
+</script>
+</html>
